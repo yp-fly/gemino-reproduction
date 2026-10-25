@@ -1,0 +1,21 @@
+{
+  "path": "/vox-cpk.pth.tar",
+  "type": "file",
+  "name": "vox-cpk.pth.tar",
+  "created": "2020-02-20T00:37:55+00:00",
+  "modified": "2020-02-20T00:37:55+00:00",
+  "size": 728766691,
+  "mime_type": "application/octet-stream",
+  "md5": "b667124dd6e324f42c3df0b068b8c593",
+  "sha256": "abb41ab1f279f26326c0d6e4d20702de6658364665aa1313daa7a63e89ea2b23",
+  "public_key": "p+s5J2CIkLAe/aDBvvSnnPvWfl49eJ/Eu+GelUjS937Fz5Ko4KEmpsZE+RQ7wgUbq/J6bpmRyOJonT3VoXnDag==",
+  "media_type": "compressed",
+  "resource_id": "225219335:075914be7cd393a802f1f287aa9e86afd21f12ea56a60f1ff6e3810b63533deb",
+  "revision": 1582171443263416,
+  "comment_ids": {
+    "public_resource": "225219335:075914be7cd393a802f1f287aa9e86afd21f12ea56a60f1ff6e3810b63533deb",
+    "private_resource": "225219335:075914be7cd393a802f1f287aa9e86afd21f12ea56a60f1ff6e3810b63533deb"
+  },
+  "exif": {},
+  "antivirus_status": "clean"
+}

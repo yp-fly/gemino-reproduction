@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checkpoint_step": 30500,
+  "runtime": "Linux Python3.10 torch2.5.1 CUDA A800",
+  "standalone_high_mode_frames": 4,
+  "standalone_low_mode_frames": 4,
+  "high_vs_low_max_mean_pixel_difference_255": 0.0,
+  "model_load": "weights_only=True; strict=True; SHA256 verified",
+  "note": "Synthetic sample tests runnable pipeline, not face quality. Model quality metrics are separate validation results."
+}

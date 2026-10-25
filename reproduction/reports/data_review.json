@@ -1,0 +1,18 @@
+{
+  "approved": true,
+  "manifest_sha256": "eb48f635a9ebb5b5b53f1162284a79bc8fad97f7ffb3e6948fa45c44bc9594ca",
+  "review_date": "2026-10-25",
+  "reviewer": "Codex visual review",
+  "coverage": "612 sampled images: first, middle and last timestamp of each of 204 logical records; reviewed all 7 overview pages",
+  "findings": "Same talking-head identity across sources; face remains within native square crop in sampled images. Natural gestures, occlusions, captions and background changes retained.",
+  "limits": "Sampled visual review, not frame-by-frame inspection. Crop coordinates differ from unpublished author annotations.",
+  "overview_files": [
+    "review_overview_1.jpg",
+    "review_overview_2.jpg",
+    "review_overview_3.jpg",
+    "review_overview_4.jpg",
+    "review_overview_5.jpg",
+    "review_overview_6.jpg",
+    "review_overview_7.jpg"
+  ]
+}

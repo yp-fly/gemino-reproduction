@@ -1,0 +1,9 @@
+{
+  "name": "Gemino reproduction, needle_drop personalized,256to1024",
+  "step": 30500,
+  "filename": "gemino-step30500.pt",
+  "sha256": "6990d825130b89f8eb9517af8fde638f84786cc521315e28f9bae401423675af",
+  "url": "https://github.com/yp-fly/gemino-reproduction/releases/download/v0.1.0/gemino-step30500.pt",
+  "format": "inference-only PyTorch tensors and config; no optimizer",
+  "model_license_note": "Noncommercial research; upstream FirstOrderModel subdirectory contains CC-BY-NC4.0; preserve all notices."
+}

@@ -1,0 +1,112 @@
+model_params:
+  common_params:
+    num_kp: 10
+    num_channels: 3
+    estimate_jacobian: true
+    lr_features: 32
+  kp_detector_params:
+    temperature: 0.1
+    block_expansion: 32
+    max_features: 1024
+    scale_factor: 0.25
+    num_blocks: 5
+    run_at_256: true
+  generator_params:
+    block_expansion: 64
+    max_features: 1024
+    num_down_blocks: 2
+    num_bottleneck_blocks: 6
+    estimate_occlusion_map: true
+    run_at_256: true
+    upsample_factor: 4
+    use_hr_skip_connections: true
+    hr_features: 16
+    encode_hr_input_with_additional_blocks: false
+    use_lr_video: true
+    lr_size: 256
+    concat_lr_video_in_decoder: false
+    use_3_pathways: true
+    dense_motion_params:
+      block_expansion: 64
+      max_features: 1024
+      num_blocks: 5
+      scale_factor: 0.25
+      run_at_256: true
+      concatenate_lr_frame_to_hourglass_input: true
+      concatenate_lr_frame_to_hourglass_output: false
+      estimate_additional_masks_for_lr_and_hr_bckgnd: true
+      use_only_src_tgt_for_motion: false
+  discriminator_params:
+    scales:
+    - 1
+    block_expansion: 32
+    max_features: 512
+    num_blocks: 4
+    sn: true
+    conditional_gan: false
+train_params:
+  skip_generator_loading: false
+  train_only_generator: false
+  train_only_upsample_layers: false
+  encode_video_for_training: true
+  target_bitrate: 45000
+  num_epochs: 30
+  num_repeats: 15
+  epoch_milestones:
+  - 60
+  - 90
+  lr_generator: 0.0002
+  lr_discriminator: 0.0002
+  lr_kp_detector: 0.0002
+  batch_size: 2
+  scales:
+  - 1
+  - 0.5
+  - 0.25
+  - 0.125
+  checkpoint_freq: 15
+  transform_params:
+    sigma_affine: 0.05
+    sigma_tps: 0.005
+    points_tps: 5
+  loss_weights:
+    generator_gan: 1
+    discriminator_gan: 1
+    feature_matching:
+    - 10
+    - 10
+    - 10
+    - 10
+    perceptual:
+    - 10
+    - 10
+    - 10
+    - 10
+    - 10
+    pixelwise: 10
+    equivariance_value: 10
+    equivariance_jacobian: 10
+seed: 20261024
+output_size: 1024
+purpose: formal
+data_manifest: data/manifest.json
+initial_checkpoint: weights/vox-cpk.pth.tar
+augment: true
+codec:
+  size: 256
+  bitrate: 45000
+  fps: 30
+  codec: vp8
+official_augmentation:
+  flip_param:
+    horizontal_flip: true
+    time_flip: true
+  jitter_param:
+    brightness: 0.1
+    contrast: 0.1
+    saturation: 0.1
+    hue: 0.1
+pipeline: official_codec_nearest_personalized_pairs_v1
+initialization_policy: official_logger_exclusions_fresh_fomm
+compatibility_note: torch1.6 and2.5 default align_corners False; current PyAV13 bridge,
+  libvpx1.12 not exact historical binary

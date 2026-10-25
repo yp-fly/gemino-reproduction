@@ -1,0 +1,23 @@
+[
+  {
+    "repository": "model",
+    "url": "https://codeload.github.com/geminovc/model/zip/refs/heads/master",
+    "archive_comment_commit": "84b9f2130d3b889fc78bb8eda3b33b49dce639c6",
+    "sha256": "52b1291ac9f8035dce026597eabd55aa9c8b63de39f9bded5becbe6fedf031e3",
+    "bytes": 81596755
+  },
+  {
+    "repository": "scripts",
+    "url": "https://codeload.github.com/geminovc/scripts/zip/refs/heads/master",
+    "archive_comment_commit": "573a98b78e41938256d6e21fb3ff0bb4823c3639",
+    "sha256": "8e84fe3b83e38e534084c66fe4f459aaa425615ccf4bdc9d5546744714272bdc",
+    "bytes": 2681382
+  },
+  {
+    "repository": "aiortc",
+    "url": "https://codeload.github.com/geminovc/aiortc/zip/refs/heads/main",
+    "archive_comment_commit": "61ff6dc86bd29e34ec87500f4238be1ebcf1ce5a",
+    "sha256": "0f71dafcf4a358e127cbacd97e257c3b8d0fb37fb735d6d5acb81552dbb5ade3",
+    "bytes": 1258627
+  }
+]

@@ -1,0 +1,6 @@
+This repository combines separately licensed components. No single MIT license is asserted for the entire model.
+
+The upstream Gemino root includes MIT (licenses/Gemino-MIT.txt), while its first_order_model subdirectory includes CC BY-NC 4.0 (licenses/FirstOrderModel-CC-BY-NC-4.0.md). Both are preserved; model use is offered for noncommercial research, subject to upstream terms.
+
+aiortc codec sources: BSD 3-Clause (licenses/aiortc-BSD-3-Clause.txt).
+New inference/download/packaging adapters by Pengfei Yin are provided under MIT terms, retaining upstream restrictions for combined components. Model weights do not grant rights to the training videos, identities or brands.

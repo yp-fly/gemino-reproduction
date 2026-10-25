@@ -1,0 +1,13 @@
+weights/
+*.pt
+*.pth
+*.zip
+*.tar.gz
+*.so
+*.o
+*.download
+__pycache__/
+.venv/
+outputs/
+validation/
+reproduction/upstream/
